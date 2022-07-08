@@ -13,8 +13,8 @@ def calculateAverage():
     total = 0
     avg_val = int(input("How many values would you like to average? "))
     for i in range(avg_val):
-        n = int(input("Enter number {0}: ".format(i + 1)))
-        total += n
+        val = int(input("Enter number {0}: ".format(i + 1)))
+        total += val
     print("Total:", total)
     print("Average:", total / avg_val)
 
@@ -47,6 +47,7 @@ def performCalculation(operator):
 
 def main():
     # Ask user to choose calculator operation or to exit program.
+    print('Welcome to the Calculator!')
     while True:
         print('1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Average and Total\n0. Exit')
         try:
@@ -66,7 +67,10 @@ def main():
             elif choice == 5:
                 calculateAverage()
             elif choice == 0:
+                print("Exit.Thank you for using!!")
                 break
+            else:
+                print('This is not a valid choice. Please choose again.')
 
         except ValueError:  # Prompt user to enter only numbers for calculations
             print('This is not a valid choice. Please choose again.')
