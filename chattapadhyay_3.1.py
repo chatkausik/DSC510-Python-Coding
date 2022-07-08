@@ -25,7 +25,7 @@ while True:
 
 if 100.00 < cable_length <= 250.00:
     cost_per_foot = 0.80
-elif 250.00 <= cable_length <= 500.00:
+elif 250.00 < cable_length <= 500.00:
     cost_per_foot = 0.70
 elif cable_length > 500.00:
     cost_per_foot = 0.50
