@@ -46,15 +46,16 @@ def pretty_print(dictionary):
     print("-------------------------")
 
     # Sort The dictionary by value
-    lst = list()
-    for key, value in list(dictionary.items()):
-        lst.append((value, key))
-
-    lst.sort(reverse=True)
+    # lst = list()
+    # for key, value in list(dictionary.items()):
+    #     lst.append((value, key))
+    #
+    # lst.sort(reverse=True)
+    lst = sorted(dictionary.items(), key=lambda x: x[1], reverse=True)
 
     # Make some space between word, and it's frequency to print nicely.
     length = 21
-    for value, key in lst:
+    for key, value in lst:
         key_length = len(key)
         filler = length - key_length
         print(key, ' ' * filler, value)
