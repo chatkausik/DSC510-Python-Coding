@@ -29,6 +29,7 @@ def process_line(line, dictionary):
     """
     line = line.translate(str.maketrans('', '', string.punctuation))  # Removed all the punctuations
     line = line.lower()  # Lower all the words.
+    line = line.strip()  # Strip leading and trailing spaces
     words = line.split()  # splitting the line into words
 
     for word in words:
@@ -41,7 +42,6 @@ def pretty_print(dictionary):
     :param dictionary:
     :return:
     """
-    print(f"Length of the dictionary: {len(dictionary)}")
     print("Word                Count")
     print("-------------------------")
 
@@ -70,11 +70,15 @@ def main():
     """
     dictionary = dict()  # defining the dictionary
 
-    gba_file = open('gettysburg.txt', 'r')  # Open the text file.
+    try:
+        gba_file = open('gettysburg.txt', 'r')  # Open the text file.
+    except FileNotFoundError as ex:
+        print(ex)
 
     for line in gba_file:
         process_line(line, dictionary)  # calling the process_line function
 
+    print(f"Length of the dictionary: {len(dictionary)}")
     pretty_print(dictionary)  # calling the pretty_print function
 
 
