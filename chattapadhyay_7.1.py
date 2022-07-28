@@ -1,5 +1,5 @@
 # Author: Kausik Chattapadhyay
-# DSC 500 Assignment 7.1
+# DSC 510 Assignment 7.1
 # Date 07/21/2022
 # Program to calculate the total words, and output the number of occurrences of each word in the file.
 
