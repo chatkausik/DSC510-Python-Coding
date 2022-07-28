@@ -1,7 +1,7 @@
 # Change#: 1
 # Change(s) Made: Generate a text file from the output rather than printing to the screen
 # Author: Kausik Chattapadhyay
-# DSC 500 Assignment 8.1
+# DSC 510 Assignment 8.1
 # Date 07/28/2022
 # Program to calculate the total words, and output the number of occurrences of each word in the file.
 # Generate a text file from the output rather than printing to the screen.
