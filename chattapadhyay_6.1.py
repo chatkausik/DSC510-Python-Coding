@@ -1,5 +1,5 @@
 # Author: Kausik Chattapadhyay
-# DSC 500 Assignment 6.1
+# DSC 510 Assignment 6.1
 # Date 07/13/2022
 # This program is designed to accept user inputs and create a list of
 # temperatures, then show the total temperatures entered, smallest and largest
