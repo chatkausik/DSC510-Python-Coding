@@ -15,7 +15,7 @@ def oauth():
     """
     # Enter your API key here
     # api_key = "Your_API_Key"
-    api_key = '3965d8b2a63d399e75251813f9f3e975'
+    api_key = '************************************'
     return api_key
 
 
